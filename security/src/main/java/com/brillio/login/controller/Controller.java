@@ -8,5 +8,20 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class Controller {
 
+    @GetMapping("/")
+    public String display(){
+        return "Hello World";
+    }
+
+    @GetMapping("/success")
+    public String success(){
+        return "logged in successfully";
+    }
+
+    @GetMapping("/fail")
+    public String fail(){
+        return "Login Failed";
+    }
+
 }
 
